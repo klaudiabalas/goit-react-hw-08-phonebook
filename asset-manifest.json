@@ -1,13 +1,24 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-08-phonebook/static/css/main.7acaea2f.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.07d3183d.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.5b875816.js",
+    "static/js/415.50d3bd85.chunk.js": "/goit-react-hw-08-phonebook/static/js/415.50d3bd85.chunk.js",
+    "static/js/285.e8bf7601.chunk.js": "/goit-react-hw-08-phonebook/static/js/285.e8bf7601.chunk.js",
+    "static/js/111.db64a134.chunk.js": "/goit-react-hw-08-phonebook/static/js/111.db64a134.chunk.js",
+    "static/css/317.22226f77.chunk.css": "/goit-react-hw-08-phonebook/static/css/317.22226f77.chunk.css",
+    "static/js/317.0687f6f1.chunk.js": "/goit-react-hw-08-phonebook/static/js/317.0687f6f1.chunk.js",
+    "static/js/270.cdca11d3.chunk.js": "/goit-react-hw-08-phonebook/static/js/270.cdca11d3.chunk.js",
+    "static/js/499.06a45ee5.chunk.js": "/goit-react-hw-08-phonebook/static/js/499.06a45ee5.chunk.js",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
-    "main.7acaea2f.css.map": "/goit-react-hw-08-phonebook/static/css/main.7acaea2f.css.map",
-    "main.07d3183d.js.map": "/goit-react-hw-08-phonebook/static/js/main.07d3183d.js.map"
+    "main.5b875816.js.map": "/goit-react-hw-08-phonebook/static/js/main.5b875816.js.map",
+    "415.50d3bd85.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/415.50d3bd85.chunk.js.map",
+    "285.e8bf7601.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/285.e8bf7601.chunk.js.map",
+    "111.db64a134.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/111.db64a134.chunk.js.map",
+    "317.22226f77.chunk.css.map": "/goit-react-hw-08-phonebook/static/css/317.22226f77.chunk.css.map",
+    "317.0687f6f1.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/317.0687f6f1.chunk.js.map",
+    "270.cdca11d3.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/270.cdca11d3.chunk.js.map",
+    "499.06a45ee5.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/499.06a45ee5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.07d3183d.js"
+    "static/js/main.5b875816.js"
   ]
 }
