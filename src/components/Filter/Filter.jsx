@@ -1,5 +1,6 @@
-import { useDispatch } from 'react-redux';
-import { setFilter } from '../../redux/actions';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectFilter } from '../../redux/selectors/selectors';
+import { setFilter } from '../../redux/slices/filterSlice';
 import css from './Filter.module.css';
 
 const Filter = () => {
@@ -19,6 +20,7 @@ const Filter = () => {
         onChange={handleFilter}
         placeholder="Enter name"
         className={css.input_filter}
+        value={useSelector(selectFilter)}
       />
     </div>
   );
