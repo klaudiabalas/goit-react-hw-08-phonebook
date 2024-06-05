@@ -9,7 +9,7 @@ const initialState = {
   error: null,
 };
 
-const loginSlice = createSlice({
+const authSlice = createSlice({
   name: 'auth',
   initialState,
   extraReducers: builder => {
@@ -43,4 +43,4 @@ const loginSlice = createSlice({
   },
 });
 
-export const loginReducer = loginSlice.reducer;
+export const authReducer = authSlice.reducer;
