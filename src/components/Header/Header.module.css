@@ -1,10 +1,13 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
   padding: 1rem;
   background-color: rgb(240, 163, 236);
   border-radius: 10px;
   font-size: 24px;
   font-weight: 700;
   color: black;
+  gap: 10px;
 }

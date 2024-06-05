@@ -8,17 +8,11 @@ export const Header = () => {
   const { isLoggedIn } = useAuth();
 
   return (
-    <header className={css.header}>
-      <Nav />
-      {isLoggedIn ? (
-        <div className={css.header_logged}>
-          <UserMenu />
-        </div>
-      ) : (
-        <div>
-          <AuthNav />
-        </div>
-      )}
+    <header>
+      <div className={css.header}>
+        <Nav />
+        {isLoggedIn ? <UserMenu /> : <AuthNav />}
+      </div>
     </header>
   );
 };

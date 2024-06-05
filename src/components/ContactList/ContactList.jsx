@@ -20,11 +20,11 @@ const ContactList = () => {
     <div className={css.contact_container}>
       <h2 className={css.contacts_header}>Contacts</h2>
       <ul className={css.list_contacts}>
-        {filterContacts.map(({ id, name, phone }) => {
+        {filterContacts.map(({ id, name, number }) => {
           return (
             <li className={css.contacts_list_item} key={id}>
               <p className={css.contact_paragraph}>{name}</p>
-              <p className={css.contact_paragraph}>{phone}</p>
+              <p className={css.contact_paragraph}>{number}</p>
               <button
                 className={css.delete_button}
                 onClick={() => handleDelete(id)}
