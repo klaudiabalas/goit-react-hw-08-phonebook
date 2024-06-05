@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import css from './LoginForm.module.css';
 
 import { logIn } from '../../redux/operactions/login';
 
@@ -32,24 +33,32 @@ export const LoginForm = () => {
   };
 
   return (
-    <Box as="form" onSubmit={handleSubmit} py="4" mx="auto">
+    <Box
+      as="form"
+      onSubmit={handleSubmit}
+      py="4"
+      mx="auto"
+      className={css.form}
+    >
       <FormControl id="email" isRequired>
-        <FormLabel>Email</FormLabel>
+        <FormLabel className={css.label}>Email</FormLabel>
         <Input
           placeholder="* Enter your email adress"
           width="100%"
           type="email"
           name="email"
+          className={css.input}
         />
       </FormControl>
       <FormControl mt="10px" id="password" isRequired>
-        <FormLabel>Password</FormLabel>
+        <FormLabel className={css.label}>Password</FormLabel>
         <InputGroup>
           <Input
             placeholder="* Enter your password"
             width="100%"
             type={showPassword ? 'text' : 'password'}
             name="password"
+            className={css.input}
           />
           <InputRightElement width="3rem">
             <Button
@@ -67,7 +76,7 @@ export const LoginForm = () => {
           </InputRightElement>
         </InputGroup>
       </FormControl>
-      <Button mt="20px" type="submit">
+      <Button className={css.button} mt="20px" type="submit">
         Log In
       </Button>
     </Box>

@@ -1,5 +1,11 @@
-.link {
+.navigation {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  margin-right: 15px;
+  gap: 15px;
+}
+
+.link {
+  border-radius: 10px;
+  background-color: rgb(251, 152, 218);
+  padding: 5px 5px 5px 5px;
 }

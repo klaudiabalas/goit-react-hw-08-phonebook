@@ -1,0 +1,23 @@
+.paragraph {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.button {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: #e8b7e1;
+  border: none;
+  width: 60px;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+}

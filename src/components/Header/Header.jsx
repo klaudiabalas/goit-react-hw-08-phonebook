@@ -10,7 +10,9 @@ export const Header = () => {
   return (
     <header>
       <div className={css.header}>
-        <Nav />
+        <div className={css.link}>
+          <Nav />
+        </div>
         {isLoggedIn ? <UserMenu /> : <AuthNav />}
       </div>
     </header>

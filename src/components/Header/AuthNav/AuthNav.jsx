@@ -3,13 +3,13 @@ import css from './AuthNav.module.css';
 
 export const AuthNav = () => {
   return (
-    <div>
-      <NavLink to="/register" className={css.link}>
-        Register
-      </NavLink>
-      <NavLink to="/login" className={css.link}>
-        Log In
-      </NavLink>
-    </div>
+    <nav className={css.navigation}>
+      <div className={css.link}>
+        <NavLink to="/register">Register</NavLink>
+      </div>
+      <div className={css.link}>
+        <NavLink to="/login">Log In</NavLink>
+      </div>
+    </nav>
   );
 };
