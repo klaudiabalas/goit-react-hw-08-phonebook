@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-// axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
+axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
 
 export const fetchContacts = createAsyncThunk(
   'contacts/fetchContacts',
@@ -29,10 +29,10 @@ export const addContact = createAsyncThunk(
           },
         }
       );
-      console.log('API response:', response.data); // Logowanie odpowiedzi z API
+      console.log('API response:', response.data);
       return response.data;
     } catch (error) {
-      console.error('API error:', error.response.data); // Logowanie błędu z API
+      console.error('API error:', error.response.data);
       return thunkAPI.rejectWithValue(error.response.data);
     }
   }
@@ -40,12 +40,15 @@ export const addContact = createAsyncThunk(
 
 export const deleteContact = createAsyncThunk(
   'contacts/deleteContact',
-  async (id, thunkAPI) => {
+  async (contactId, thunkAPI) => {
     try {
-      const { data } = await axios.delete(`/contacts/${id}`);
-      return data;
+      console.log(`Attempting to delete contact with id: ${contactId}`);
+      const response = await axios.delete(`/contacts/${contactId}`);
+      console.log('Delete response:', response.data);
+      return contactId;
     } catch (error) {
-      return thunkAPI.rejectWithValue(error.message);
+      console.error('Delete error:', error.response?.data || error.message);
+      return thunkAPI.rejectWithValue(error.response?.data || error.message);
     }
   }
 );
