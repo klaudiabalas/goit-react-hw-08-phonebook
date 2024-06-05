@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[936],{4936:(e,a,o)=>{o.r(a),o.d(a,{default:()=>h});const s="Home_container__w+u63",c="Home_header__jgN9+",n="Home_paragraph__wEht8";var r=o(184);const h=()=>(0,r.jsxs)("div",{className:s,children:[(0,r.jsx)("h2",{className:c,children:"Home page"}),(0,r.jsx)("p",{className:n,children:"Welcome to your own online phonebook! Now you can save phone numbers."})]})}}]);
+//# sourceMappingURL=936.ba379c6a.chunk.js.map
